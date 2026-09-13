@@ -1,0 +1,45 @@
+%#BIBTEX pbibtex main
+\documentclass[twocolumn, a4paper, dvipdfmx]{ieicejsp}
+
+\usepackage{newenum}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\title{{\bf いい感じの研究タイトル}
+  {\normalsize \\ Nice title for my research}}
+  \author{
+    16x3051 澁谷将吾$^1$ \\
+    指導教員 彌冨 仁$^1$ \\ 
+}
+\date{\today}
+\affliate{
+    法政大学理工学部応用情報工学科$^1$ \\
+    Department of Applied Informatics Faculty of Science and Engineering, HOSEI University
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    \input{00_abstract}
+\end{abstract}
+
+\section{背景}
+    \input{01_background}
+
+\section{方法}
+    \input{02_method}
+
+\section{実験}
+    \input{03_experiments}
+    
+\section{結論}
+    \input{04_conclusion}
+	  
+\bibliographystyle{junsrt}
+{\scriptsize
+    \bibliography{ref}
+}
+
+\end{document}
